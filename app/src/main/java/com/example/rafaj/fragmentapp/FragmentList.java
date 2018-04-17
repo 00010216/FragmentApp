@@ -46,7 +46,7 @@ public class FragmentList extends ListFragment implements AdapterView.OnItemClic
                 getResources().getStringArray(R.array.Description)[i]);
 
         Bundle bundle = new Bundle(); //procesa la info que se enviara a traves del intent
-        bundle.putParcelable("KEY", bundle);
+        bundle.putParcelable("KEY", planetInfo); //manda identificador de bundle
 
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
             Intent newIntent = new Intent(getActivity().getApplicationContext(), Main2Activity.class);
