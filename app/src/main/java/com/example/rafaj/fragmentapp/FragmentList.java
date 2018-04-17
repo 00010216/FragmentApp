@@ -18,7 +18,7 @@ import android.widget.Toast;
  */
 
 public class FragmentList extends ListFragment implements AdapterView.OnItemClickListener{
-
+    BasicInformation planetInfo;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -36,22 +36,26 @@ public class FragmentList extends ListFragment implements AdapterView.OnItemClic
         getListView().setOnItemClickListener(this);
     }
 
-
+    //establece la informacion segun el click y lo envia a la interfaz correspondiente
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        //Toast.makeText(getActivity(), "Item: " + adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
+        //se envia a objeto el contenido en la posicion i segun click
+        planetInfo = new BasicInformation(
+                getResources().getStringArray(R.array.Planets)[i],
+                getResources().obtainTypedArray(R.array.ImgId).getResourceId(i,-1),
+                getResources().getStringArray(R.array.Description)[i]);
+
+        Bundle bundle = new Bundle(); //procesa la info que se enviara a traves del intent
+        bundle.putParcelable("KEY", bundle);
 
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
             Intent newIntent = new Intent(getActivity().getApplicationContext(), Main2Activity.class);
             newIntent.setAction(Intent.ACTION_SEND);
-            newIntent.setType("text/plain");
-            newIntent.putExtra(Intent.EXTRA_TEXT, adapterView.getItemAtPosition(i).toString());
+            newIntent.putExtras(bundle);
             startActivity(newIntent);
         }else if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
             Toast.makeText(getActivity(), "Item: " + adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
 
-            Bundle bundle = new Bundle();
-            bundle.putString("KEY", adapterView.getItemAtPosition(i).toString());
             FragmentViewer frag = new FragmentViewer();
             frag.setArguments(bundle);
 
