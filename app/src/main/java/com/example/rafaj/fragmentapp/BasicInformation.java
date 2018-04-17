@@ -10,6 +10,7 @@ public class BasicInformation implements Parcelable {
     private int  image;
     private String description;
 
+    //constructor
     public BasicInformation(String title, int image, String description){
         this.title = title;
         this.image = image;
@@ -21,7 +22,7 @@ public class BasicInformation implements Parcelable {
         this.image = in.readInt();
         this.description = in.readString();
     }
-
+    //Implementacion de Parcelable interface
     public static final Creator<BasicInformation> CREATOR = new Creator<BasicInformation>() {
         @Override
         public BasicInformation createFromParcel(Parcel in) {
@@ -36,14 +37,17 @@ public class BasicInformation implements Parcelable {
     @Override
     public int describeContents() {
         return 0;
-    }
+    } //describe los objetos contenidos en esta instancia de parcelable
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
+        //da tamano de parcel, dest en que parcel se debe escribir el objeto, flags como debe ser escrito
         dest.writeString(title);
         dest.writeString(description);
         dest.writeInt(image);
     }
+
+    //definicion de setters y getters
 
     public String getTitle() {
         return title;
