@@ -43,8 +43,8 @@ public class BasicInformation implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         //da tamano de parcel, dest en que parcel se debe escribir el objeto, flags como debe ser escrito
         dest.writeString(title);
-        dest.writeString(description);
         dest.writeInt(image);
+        dest.writeString(description);
     }
 
     //definicion de setters y getters
