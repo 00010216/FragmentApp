@@ -26,33 +26,14 @@
     </integer-array>
 
     <string-array name="Description">
-        <item>"As a star, the Sun is a ball of gas (92.1 percent hydrogen and 7.8 percent helium)
-            held together by its own gravity."</item>
-        <item>"Mercury is the smallest planet in our solar system - only slightly larger than
-            the Earth's moon. Mercury is a rocky planet, also known as a terrestrial planet.
-            Mercury has a solid, cratered surface, much like the Earth's moon."</item>
-        <item>"Venus is covered by a thick, rapidly spinning atmosphere, creating a scorched
-            world with temperatures hot enough to melt lead and a surface pressure 90 times
-            that of Earth. Because of its proximity to Earth and the way its clouds reflect
-            sunlight, Venus appears to be the brightest planet in the sky."</item>
-        <item>"Earth is made up of complex, interactive systems that are often unpredictable.
-            Air, water, land, and life—including humans—combine forces to create a constantly
-            changing world."</item>
-        <item>"Mars is known as the Red Planet because iron minerals in the Martian soil oxidize,
-            or rust, causing the soil and atmosphere to look red. Mars has two moons named Phobos
-            and Deimos."</item>
-        <item>"Like Jupiter, Saturn is made mostly of hydrogen and helium. Its volume is 755
-            times greater than that of Earth. Winds in the upper atmosphere reach 1,600 feet
-            (500 meters) per second in the equatorial region."</item>
-        <item>"Saturn is the sixth planet from the sun and the second largest planet in our
-            solar system. Adorned with thousands of beautiful ringlets. Like fellow gas giant
-            Jupiter, Saturn is a massive ball made mostly of hydrogen and helium."</item>
-        <item>"Uranus has been revealed as a dynamic world with some of the brightest clouds
-            in the outer solar system and 11 rings. The first planet found with the aid of a
-            telescope, Uranus was discovered in 1781 by astronomer William Herschel."</item>
-        <item>Neptune is an ice giant. Most of its mass is a hot, dense fluid of "icy"
-            materials – water, methane and ammonia – above a small rocky core.It has 13 moons
-            (and one more awaiting confirmation of discovery), which are named after sea gods
-            and nymphs in Greek mythology.</item>
+        <item>"As a star, the Sun is a ball of gas (92.1 percent hydrogen and 7.8 percent helium)held together by its own gravity."</item>
+        <item>"Mercury is the smallest planet in our solar system - only slightly larger than the Earth's moon. Mercury is a rocky planet, also known as a terrestrial planet. Mercury has a solid, cratered surface, much like the Earth's moon."</item>
+        <item>"Venus is covered by a thick, rapidly spinning atmosphere, creating a scorched world with temperatures hot enough to melt lead and a surface pressure 90 times that of Earth. Because of its proximity to Earth and the way its clouds reflect sunlight, Venus appears to be the brightest planet in the sky."</item>
+        <item>"Earth is made up of complex, interactive systems that are often unpredictable. Air, water, land, and life—including humans—combine forces to create a constantly changing world."</item>
+        <item>"Mars is known as the Red Planet because iron minerals in the Martian soil oxidize, or rust, causing the soil and atmosphere to look red. Mars has two moons named Phobos and Deimos."</item>
+        <item>"Like Jupiter, Saturn is made mostly of hydrogen and helium. Its volume is 755 times greater than that of Earth. Winds in the upper atmosphere reach 1,600 feet (500 meters) per second in the equatorial region."</item>
+        <item>"Saturn is the sixth planet from the sun and the second largest planet in our solar system. Adorned with thousands of beautiful ringlets. Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium."</item>
+        <item>"Uranus has been revealed as a dynamic world with some of the brightest clouds in the outer solar system and 11 rings. The first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel."</item>
+        <item>Neptune is an ice giant. Most of its mass is a hot, dense fluid of "icy" materials – water, methane and ammonia – above a small rocky core.It has 13 moons (and one more awaiting confirmation of discovery), which are named after sea gods and nymphs in Greek mythology.</item>
     </string-array>
 </resources>
