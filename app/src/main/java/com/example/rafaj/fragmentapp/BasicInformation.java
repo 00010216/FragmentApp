@@ -8,7 +8,7 @@ public class BasicInformation {
     private String  image;
     private String description;
 
-    public BasicInformation (String title, String image, String description){
+    public BasicInformation(String title, String image, String description){
         this.title = title;
         this.image = image;
         this.description = description;
