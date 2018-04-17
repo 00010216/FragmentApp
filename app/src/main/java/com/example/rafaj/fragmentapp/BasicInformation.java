@@ -1,25 +1,52 @@
 package com.example.rafaj.fragmentapp;
 
 
+import android.os.Parcel;
+import android.os.Parcelable;
 
-public class BasicInformation {
+public class BasicInformation implements Parcelable {
 
     private String  title;
-    private String  image;
+    private int  image;
     private String description;
 
-    public BasicInformation(String title, String image, String description){
+    public BasicInformation(String title, int image, String description){
         this.title = title;
         this.image = image;
         this.description = description;
     }
 
-    public String getTitle() {
-        return title;
+    protected BasicInformation(Parcel in) {
+        this.title = in.readString();
+        this.image = in.readInt();
+        this.description = in.readString();
     }
 
-    public String getImage() {
-        return image;
+    public static final Creator<BasicInformation> CREATOR = new Creator<BasicInformation>() {
+        @Override
+        public BasicInformation createFromParcel(Parcel in) {
+            return new BasicInformation(in);
+        }
+
+        @Override
+        public BasicInformation[] newArray(int size) { return new BasicInformation[size];
+        }
+    };
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(title);
+        dest.writeString(description);
+        dest.writeInt(image);
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     public String getDescription() {
@@ -30,7 +57,11 @@ public class BasicInformation {
         this.title = title;
     }
 
-    public void setImage(String image) {
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
         this.image = image;
     }
 
