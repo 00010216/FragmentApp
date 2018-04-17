@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Solar System</string>
+
+    <string-array name="Planets">
+        <item>Sol</item>
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Tierra</item>
+        <item>Marte</item>
+        <item>Jupiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+        <item>Neptuno</item>
+    </string-array>
+
+    <integer-array name="ImgId">
+        <item>@drawable/sun</item>
+        <item>@drawable/mercury</item>
+        <item>@drawable/venus</item>
+        <item>@drawable/earth</item>
+        <item>@drawable/mars</item>
+        <item>@drawable/jupiter</item>
+        <item>@drawable/saturn</item>
+        <item>@drawable/uranus</item>
+        <item>@drawable/neptune</item>
+    </integer-array>
+
+    <string-array name="Description">
+        <item>"Como una estrella, el sol es una bola de gas (92.1 porciento de hidrogeno y 7.8 porciento helio)
+            se mantiene juntos por su propia gravedad"</item>
+        <item>"Mercurio es el planeta más pequeño en el sistems solar - solo un poco más grande que la luna
+            de la Tierra. Mercurio es un planeta rocoso, también conocido como un planeta terrestre.
+            Mercurio tiene una sólida, superficie con cráteres , como la luna de la Tierra."</item>
+        <item>"Venus está cubierto por una atmósfera gruesa y que gira rápidamente, creando un
+            mundo con temperaturas lo suficientemente calientes como para derretir plomo y una presión superficial 90 veces
+            el de la Tierra. Por su proximidad a la Tierra y la forma en que se reflejan sus nubes
+            la luz del sol, Venus parece ser el planeta más brillante en el cielo."</item>
+        <item>"La Tierra está compuesta de sistemas complejos e interactivos que a menudo son impredecibles.
+            El aire, el agua, la tierra y la vida, incluidos los seres humanos, combinan fuerzas para crear
+            constantemente cambiando el mundo."</item>
+        <item>"Marte es conocido como el Planeta Rojo porque los minerales de hierro en el suelo marciano se oxidan,
+            u óxido, haciendo que el suelo y la atmósfera se vean rojos. Marte tiene dos lunas llamadas Phobos
+            y Deimos."</item>
+        <item>"Al igual que Júpiter, Saturno está compuesto principalmente de hidrógeno y helio. Su volumen es 755
+            veces mayor que el de la Tierra. Los vientos en la atmósfera superior alcanzan los 1.600 pies
+            (500 metros) por segundo en la región ecuatorial."</item>
+        <item>"Saturno es el sexto planeta desde el sol y el segundo planeta más grande en nuestro
+            sistema solar. Adornado con miles de hermosos rizos. Como compañero gigante de gas
+            Júpiter, Saturno es una bola masiva hecha principalmente de hidrógeno y helio."</item>
+        <item>"Urano se ha revelado como un mundo dinámico con algunas de las nubes más brillantes
+            en el sistema solar exterior y 11 anillos. El primer planeta encontrado con la ayuda de un
+            telescopio, Urano fue descubierto en 1781 por el astrónomo William Herschel."</item>
+        <item>"Neptuno es un gigante de hielo. La mayor parte de su masa es un fluido caliente y denso de "hielo"
+            materiales - agua, metano y amoníaco - por encima de un pequeño núcleo rocoso. Tiene 13 lunas
+            (y uno más en espera de la confirmación del descubrimiento), que llevan el nombre de dioses del mar
+            y ninfas en la mitología griega."</item>
+    </string-array>
+</resources>
