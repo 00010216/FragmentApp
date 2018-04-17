@@ -26,11 +26,20 @@
 
         </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/img_planet"
+        <RelativeLayout
             android:layout_width="0dp"
-            android:layout_height="195dp"
-            android:layout_weight="2"/>
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/img_planet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mercury"
+                android:layout_centerInParent="true"
+                android:layout_weight="2"/>
+
+        </RelativeLayout>
 
     </LinearLayout>
 
