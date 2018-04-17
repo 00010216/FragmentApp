@@ -21,16 +21,21 @@ public class FragmentViewer extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.viewer_fragment, container, false);
 
+        //define la vista respectiva al componente
         planetName = view.findViewById(R.id.txt_title);
         planetImage = view.findViewById(R.id.img_planet);
+        description = view.findViewById(R.id.txt_description);
         Bundle bundle = this.getArguments();
-
+        BasicInformation planetInfo;
 
         if(bundle != null){
+            planetInfo = bundle.getParcelable("KEY"); //identifica el bundle que contiene el objeto
             Toast.makeText(getActivity(), "Item: " + bundle.getString("KEY"), Toast.LENGTH_SHORT).show();
 
-            planetName.setText(bundle.getString("KEY"));
-            planetImage.setText(bundle.getString("KEY1"));
+            //coloca la info guardada en el objeto y la coloca en el view respectivo
+            planetName.setText(planetInfo.getTitle());
+            planetImage.setImageResource(planetInfo.getImage());
+            description.setText(planetInfo.getDescription());
 
         }
 
